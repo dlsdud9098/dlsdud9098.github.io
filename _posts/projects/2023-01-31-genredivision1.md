@@ -15,12 +15,14 @@ tags: [Python, NLP, Crawling]
 ### 카카오 페이지
 
 ![](https://velog.velcdn.com/images/dlsdud9098/post/185c04c9-e536-4d55-936b-97500477aff7/image.png)
+
 카카오페이지에 가면 이렇게 장르별로 분류가 되어있는데
 원래 계획은 전체에서 한 번에 긁어와 분류를 하려고 했지만, 일정 이상 스크롤을 내리면 페이지가 다운되는 문제가 발생했습니다.
 
 그래서 장르별로 크롤링해서 합치기로 했다.
 
 ![](https://velog.velcdn.com/images/dlsdud9098/post/e6c2f1b7-540a-4bbc-851b-4f63c51053e7/image.png)
+
 (판타지만 해도 8천개에 가깝고, 로판은 18000개가 넘는다. ㄷㄷ 로판은 너무 많아서 스크롤을 끝까지 내릴수가 없어서 중간에 8천개 언저리에서 끊었다.)
 
 순서는 이렇다.
@@ -143,6 +145,7 @@ while True:
 이제 소설 하나 하나에서 해당 소설 페이지로 들어가는 링크를 가져온다.
 
 ![](https://velog.velcdn.com/images/dlsdud9098/post/a750ef53-9d51-4f6a-acda-66c4a1910db3/image.png)
+
 ![](https://velog.velcdn.com/images/dlsdud9098/post/bcd73da8-f2b2-4143-9bf8-f66cf65ae01b/image.png)
 
 이런식으로 잘 가져와졌다.(로맨스는 너무 많아서 그런지 스크롤 내리다가 중간에 페이지가 터져서 40% 정도인 8천개 정도만 구했다.)
