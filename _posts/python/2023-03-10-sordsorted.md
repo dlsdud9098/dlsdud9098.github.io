@@ -16,7 +16,6 @@ tags: [python]
 * 기본적으로 오름차순 정렬이다.
 * 대문자와 소문자가 섞여있을 경우, [ASCII CODE](https://velog.velcdn.com/images/dlsdud9098/post/c3dbd760-7190-4131-a547-122836d02fdb/image.png)를 참조하여 오름차순으로 정렬한다.
 
-
 ### 코드
 ```python
 import random
@@ -24,7 +23,6 @@ import random
 list_a = [random.randint(-10, 15) for i in range(10)]
 list_b = [chr(random.randint(97, 122)) for i in range(10)]
 list_c = [chr(ascii_list[random.randint(0, 51)]) for _ in range(10)]
-
 
 print(list_a) # [1, 4, -7, 3, -10, 2, -8, -4, -6, 3]
 list_a.sort()
@@ -53,7 +51,6 @@ print(list_c) # ['D', 'G', 'H', 'I', 'M', 'M', 'N', 'c', 'g', 'x']
 ```
 
 * 리턴값이 존재하며 리스트 객체 자체를 정렬하지 않는다.
-
 
 ### 코드
 ```python

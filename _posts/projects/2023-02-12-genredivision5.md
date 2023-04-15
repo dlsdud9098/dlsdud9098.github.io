@@ -14,10 +14,10 @@ tags: [Python, NLP, Crawling]
 먼저 문피아 홈페이지를 살펴보자
 
 ![](https://velog.velcdn.com/images/dlsdud9098/post/f44fab3b-3f6f-45a8-8960-75c73edbd3a3/image.png)
+
 문피아는 다른 사이트 들과 다르게 전체 소설 목록 보는게 힘들게 되어있다.
 
 ![](https://velog.velcdn.com/images/dlsdud9098/post/b0674941-2a5f-4707-a14b-522e82ca8e83/image.png)
-
 
 이런 식으로 왼쪽에 왼쪽에 페이지 목록, 소설 목록이 모여있다.
 
@@ -32,9 +32,13 @@ tags: [Python, NLP, Crawling]
 
 ## 페이지 별 끝 페이지 번호 알아내기
 페이지로 들어가면 
+
 ![](https://velog.velcdn.com/images/dlsdud9098/post/cdf4f22e-0ba5-47ad-8b3a-1c8c8a3c94a9/image.png)
+
 이런식으로 목록이 있는데 6쪽 오른쪽에 있는 꺽세를 눌러보면
+
 ![](https://velog.velcdn.com/images/dlsdud9098/post/80b8b8c9-5c8f-48de-ab93-217e197b7036/image.png)
+
 이렇게 맨 끝 페이지로 가는 것을 알 수 있다.
 이것을 이용하여 크롤링할 페이지들의 끝 페이지를 알아낸다.
 
@@ -219,7 +223,6 @@ def crawl_link(link, novel_df_list):
 6. 마지막까지 오고 끝났음에서 나머지 코어에서 돌아가는 경우가 있다. ```try: except: pass```로 끝내준다.
 
 ![](https://velog.velcdn.com/images/dlsdud9098/post/d9d1badf-d282-4d4a-befb-ccd9c97c58dd/image.png)
-
 
 약 4만개 정도 크롤링 하는데 3시간 정도 걸렸다.
 이전에 네이버 크롤링하는데에 비해 크롤링 시간이 확연히 줄어들었다.

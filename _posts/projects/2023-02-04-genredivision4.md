@@ -70,4 +70,6 @@ def write_novel_file(genre_name, url):
 전체적인 부분은 카카오 페이지를 크롤링할 때와 비슷하기 때문에 설명은 생략한다.
 
 ![](https://velog.velcdn.com/images/dlsdud9098/post/f9ce903a-30e1-4a97-bc75-01fd5556b7e8/image.png)
+
 ![](https://velog.velcdn.com/images/dlsdud9098/post/1b79d9ef-acf4-495c-b5f7-4dac04589f82/image.png)
+

@@ -13,7 +13,6 @@ tags: [python]
 
 ![](https://velog.velcdn.com/images/dlsdud9098/post/ec225776-3227-4b1f-8633-fee70ebacb7d/image.png)
 
-
 ---
 
 ## 💻 노드 넣기
@@ -87,13 +86,11 @@ def add_node(data):
    1. 처음 노드일 때
    ![](https://velog.velcdn.com/images/dlsdud9098/post/8957cc26-69ed-459d-ace2-5116a9de1cd9/image.png)
 
-
    2. 중간 노드일 때
    ![](https://velog.velcdn.com/images/dlsdud9098/post/9fa857bb-210d-4f7a-973b-74d482952b44/image.png)
 
    3. 마지막 노드일 때
    ![](https://velog.velcdn.com/images/dlsdud9098/post/7ea79806-6138-46e5-8be4-cd9810c89435/image.png)
-
 
    
    ```python
@@ -134,7 +131,6 @@ def add_node(data):
 ---
 
 ## 💻 노드 출력
-
 
 ```python
 def list_node():

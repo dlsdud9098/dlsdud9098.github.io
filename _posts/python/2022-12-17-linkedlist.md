@@ -13,6 +13,7 @@ tags: [Python]
 링크드 리스트는 배열의 단점을 보완하기 위해 만들어진 자료구조다.
 
 Linked-list 구조
+
 ![](https://velog.velcdn.com/images/dlsdud9098/post/4d44a6c0-c9e9-45fa-9569-fdaa8bb37c79/image.png)
 
 head: 첫(시작지점) 노드를 가리키고 있다.
@@ -38,6 +39,7 @@ node.data = 10
 # head가 시작지점인 node를 가리킴
 head = node
 ```
+
 ![](https://velog.velcdn.com/images/dlsdud9098/post/45e6bc6e-d3c5-41eb-be0b-233a6991345e/image.png)
 
 이런식으로 노드가 만들어지고, head는 시작 노드를 가리킨다.
@@ -47,12 +49,16 @@ head = node
 
 노드를 삽입하는데 3가지 경우가 있다.
 1. head 다음부분(첫부분)에 삽입할 때
-![](https://velog.velcdn.com/images/dlsdud9098/post/cf973262-5540-485c-afb0-45731257d488/image.png)
-2. 중간에 삽입할 때
-![](https://velog.velcdn.com/images/dlsdud9098/post/d72471b5-2a98-4061-a2bb-5b12185b46e3/image.png)
-3. 마지막 노드 다음에 삽입할 때
-![](https://velog.velcdn.com/images/dlsdud9098/post/b59da595-4f85-4375-aa34-0584eb3908db/image.png)
 
+![](https://velog.velcdn.com/images/dlsdud9098/post/cf973262-5540-485c-afb0-45731257d488/image.png)
+
+2. 중간에 삽입할 때
+
+![](https://velog.velcdn.com/images/dlsdud9098/post/d72471b5-2a98-4061-a2bb-5b12185b46e3/image.png)
+
+3. 마지막 노드 다음에 삽입할 때
+
+![](https://velog.velcdn.com/images/dlsdud9098/post/b59da595-4f85-4375-aa34-0584eb3908db/image.png)
 
 조건은 여러가지가 있겠지만 일단 오른차순으로 하겠다.
 
@@ -120,10 +126,15 @@ while temp != None:
 
 노드를 삭제하는 것도 3가지 경우가 있다.
 1. 가장 앞에 있는 노드를 삭제할 떄
+
 ![](https://velog.velcdn.com/images/dlsdud9098/post/db9f160b-f586-4333-b222-d9119a56fc78/image.png)
+
 2. 가운데 노드를 삭제할 때
+
 ![](https://velog.velcdn.com/images/dlsdud9098/post/591af238-66ad-45ac-a201-9092ba4951ab/image.png)
+
 3. 가장 마지막 노드를 삭제할 때
+
 ![](https://velog.velcdn.com/images/dlsdud9098/post/17cdf158-b3cb-48e1-976f-f7797efa3fd2/image.png)
 
 먼저 노드를 순차적으로 돌면서 삭제할 값과 일치한 노드를 찾고 삭제한다.

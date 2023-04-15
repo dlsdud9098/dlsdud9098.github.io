@@ -200,7 +200,6 @@ for novel_href in kakao_url_list:
     random_time_sleep = random.randint(2,10)
     time.sleep(random_time_sleep)
 
-
 novel_data = {
     'title': novel_name,
     'author': novel_author,

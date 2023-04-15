@@ -21,6 +21,7 @@ tags: [Python, NLP, Crawling]
 일단 막아놓은걸 뚫었다고 쓰기에는 사이트에서 말 한데로 저작권 등 여러 문제가 있기 때문에 자세한 방법은 올리지 않겠다.
 
 ![](https://velog.velcdn.com/images/dlsdud9098/post/ef0b0068-f4ce-4f60-adf0-d2f638470ad6/image.png)
+
 일단 긁을 수 있는건 다 긁은거 같다.
 
 소개글도 긁을 수 있긴 한데 너무 오래걸릴거 같아서 패스했다.

@@ -214,6 +214,7 @@ plt.xlabel('epoch')
 plt.ylabel('loss')
 plt.show()
 ```
+
 ![](https://velog.velcdn.com/images/dlsdud9098/post/b85842b6-8a04-4d24-95af-a1610a93c04f/image.png)
 
 간단하게 만들어서 그런지 결과가 처참하다.
@@ -226,7 +227,6 @@ plt.show()
 * '천재 아이돌의 연예계 공략법'		# 현판
 * '가상 아이돌이 우리 집에 떨어졌다'	# 로맨스
 * '아기 악당님은 세계 정복을 꿈꾼다'	# 로판
-
 
 ```python
 # 테스트

@@ -64,7 +64,6 @@ def test(link):
 	global list_a
 	list_a.append(link)
 
-
 if __name__ == '__main__':
     freeze_support()
 
