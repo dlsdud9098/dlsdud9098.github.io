@@ -213,6 +213,7 @@ novel_data = {
 바로 15세 이상 이용가 소설은 로그인을 해야한다는 점이다.
 
 해당 페이지로 들어가면
+
 ![](https://velog.velcdn.com/images/dlsdud9098/post/4f1d7419-18cf-418c-8d62-e99595a2908a/image.png)
 
 이런 창이 뜨고 여기서는 소설 정보 태그들을 가져올 수 없기 때문에 ```NoSuchElementException```에러가 발생한다.
