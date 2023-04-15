@@ -167,6 +167,7 @@ kakao_novel_list.to_csv('kakao_novel_list.csv', encoding='utf-8-sig')
 데이터프레임으로 나온 결과를 보여주고 싶은데, 필자는 아직도 데이터를 뽑는중이다.
 
 ![](https://velog.velcdn.com/images/dlsdud9098/post/a21319f7-dbb9-4ffc-b65d-6186b0f937c5/image.png)
+
 약 2만개 정도 뽑는데, 예상 시간은 약 13시간이다.
 
 [장르 자동 분류기 만들기 #1](https://velog.io/@dlsdud9098/%EC%9E%A5%EB%A5%B4-%EC%9E%90%EB%8F%99-%EB%B6%84%EB%A5%98%EA%B8%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0-1)
