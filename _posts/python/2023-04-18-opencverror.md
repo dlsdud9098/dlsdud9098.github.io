@@ -26,7 +26,7 @@ pip install opencv_contrib_python
 
 찾다가 이런 글을 발견했다.
 
-![](/assets/img/content_imgs/opencverror.png)
+![](/assets/img/content_imgs/opencverror.PNG)
 
 저기서 하라는 대로 설치 했는데 설치가 됐고, 에러도 뜨지 않는다!
 
