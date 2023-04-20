@@ -36,7 +36,7 @@ tags: [python]
 
 그래서 나도 오토캡쳐(사실상 오토마우스)를 통해 찍었다.
 
-![](https://youtu.be/5bW52KbQuvk)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5bW52KbQuvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 이 영상을 참고해서 만들었다.
 
