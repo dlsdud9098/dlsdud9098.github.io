@@ -1,6 +1,6 @@
 ---
 layout: post
-title: YES24 Ebook pdf로 만들기(오토캡쳐 매크로)
+title: "YES24 Ebook pdf로 만들기(오토캡쳐 매크로)"
 categories: [Coding, Python]
 tags: [python]
 ---
