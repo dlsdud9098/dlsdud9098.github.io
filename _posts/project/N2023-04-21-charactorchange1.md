@@ -1,8 +1,31 @@
 ---
 layout: post
-title: "사진 속 인물 변경하기 #1"
+title: "동영상 속 인물 변경하기 #1"
 categories: [Project, Character Change]
 tags: [Python, DL, Stable Diffusion]
 ---
 
 ## 개요
+
+이번에는 **Stable Diffusion**으로 이미지를 번경해 보려고 한다.
+
+동영상을 집어넣으면, 동영상에서 인물(한 명)을 내가 원하는 캐릭터르 바꿔주는 것을 목표로 하고 있다.  
+(배경은 그대로, 인물만 바꿈)
+
+약 한 달 동안 진행될 예정이다.
+
+## 진행 계획
+
+1. stable_diffusion에서 원하는 사진이 나오도록 프롬프트 제작
+2. 동영상에서 프레임 수 대로 사진 추출
+3. 사진에서 openpose를 적용하여 동작 추출
+4. 사진에서 depth 추출
+5. 준비해둔 프롬프트와 openpose, depth를 합침
+6. 새로 나온 사진을 기존의 영상 프레임 수에 맞게 동영상으로 제작
+
+## stable diffusion webui
+
+stable diffusion을 웹에서 사용할 수 있게끔 만들어진 프로그램이다.  
+보다 보다 쉽게 접근할 수 있다.  
+이곳에서 먼저 프롬프트를 만들고, 여러 이미지 실험을 한 뒤에 진행할 예정이다.
+
