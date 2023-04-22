@@ -5,6 +5,8 @@ categories: [Project, Character Change]
 tags: [Python, DL, Stable Diffusion]
 ---
 
+> 현재 개발 중으로 이후 수정될 수 있습니다.(2023.04.22)
+
 ## 개요
 
 이번에는 **Stable Diffusion**으로 이미지를 번경해 보려고 한다.
@@ -14,14 +16,20 @@ tags: [Python, DL, Stable Diffusion]
 
 약 한 달 동안 진행될 예정이다.
 
-## 진행 계획
+* 개발 환경
+  * Windows 10, Ubuntu-20.04
+  * Python
+  * VSCode
+  * WebUI, ComfyUI
+  * requirements
 
-1. stable_diffusion에서 원하는 사진이 나오도록 프롬프트 제작
-2. 동영상에서 프레임 수 대로 사진 추출
-3. 사진에서 openpose를 적용하여 동작 추출
-4. 사진에서 depth 추출
-5. 준비해둔 프롬프트와 openpose, depth를 합침
-6. 새로 나온 사진을 기존의 영상 프레임 수에 맞게 동영상으로 제작
+* 진행 계획
+  1. stable_diffusion에서 원하는 사진이 나오도록 프롬프트 제작
+  2. 동영상에서 프레임 수 대로 사진 추출
+  3. 사진에서 openpose를 적용하여 동작 추출
+  4. 사진에서 depth 추출
+  5. 준비해둔 프롬프트와 openpose, depth를 합침
+  6. 새로 나온 사진을 기존의 영상 프레임 수에 맞게 동영상으로 제작
 
 ## stable diffusion webui
 
@@ -50,3 +58,5 @@ UI를 사용하는 이유는 단순히 코드로 접근하는 것 보다 보다 
   * 확장성이 WebUI에 비해 작다.
 ![](/assets/img/content_imgs/stable2.PNG){:. align-center}
 *comfyanonyous/ComyUI 예시*
+
+Stable Diffusion를 처음 사용해 보기 때문에, 접근하기 쉬운 WebUI를 사용했다.
