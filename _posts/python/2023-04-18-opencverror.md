@@ -39,3 +39,16 @@ error: OpenCV(3.4.18) D:\a\opencv-python\opencv-python\opencv\modules\highgui\sr
 ```cv2.imshow()```를 수행하는데 오류가 발생했다.  
 그래서 일단 ```cv2.imshow()``` 대신에 ```plt.imshow()```를 사용해 문제를 넘어갔는데, ```cv2.waitkey()```에서도 오류가 발생한 것이다.
 
+이 부분은 **cv2.imshow()**가 없으니 생긴 문제 같다.  
+그냥 
+```python
+cv2.imshow()
+cv2.waitkey()
+cv2.destoryAllWindows()
+```
+대신에
+```python
+plt.imshow()
+plt.show()
+```
+를 사용해야 할 것 같다.
