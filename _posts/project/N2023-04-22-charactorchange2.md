@@ -15,3 +15,16 @@ tags: [Python, DL, Stable Diffusion]
 설치하고 나서 폴더의 **webui-user.bat** 파일을 우클릭->편집에 들어가
 
 **set COMMANDLINE_ARGS=** 뒤에 **--autolaunch**, **--xformers** 이 두개를 추가해 준다.
+
+- --autolaunch: 웹 페이지를 자동으로 실행해줌
+- --xformers: 메모리를 덜 쓰고, 속도를 증가시킨다.
+
+그리고 내가 원하는 그림체의 캐릭터를 생성해야 한다.  
+그림체를 생성하는데에는 두가지가 필요하다.
+
+* checkpoint 
+  * 일종의 그림체라고 할 수 있다.
+* Lora
+  * 특정 인물 또는 형태
+
+동영상(한 명)에서 계속해서 같은 인물이 나오듯이, 캐릭터도 같은 캐릭터가 계속 나와야 한다.
