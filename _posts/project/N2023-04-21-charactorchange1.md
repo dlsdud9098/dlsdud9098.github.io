@@ -34,4 +34,19 @@ UI를 사용하는 이유는 단순히 코드로 접근하는 것 보다 보다 
 
 ### webui와 comfyui의 차이점?
 
-![webui](/assets/img/content_imgs/stable1.PNG)
+둘 다 사용해 본 입장으로써, 두 개를 비교해 보자면,
+* WebUI
+  * 모든 것이 GUI로 이루어져 있기 때문에, 사용에 용이하다.
+  * 초보자들도 쉽게 접근할 수 있다.
+  * 사용성이 편하기 때문에, 여러 확장 프로그램이 많이 있다.
+![](/assets/img/content_imgs/stable1.PNG){: .align-center}
+*AUTOMATIC1111/WebUI 예시*
+
+<br>
+
+* ComfyUI
+  * 내가 하나하나 순서를 지정할 수 있다.
+  * 내 입장에서는 이쪽이 더 편하다.
+  * 확장성이 WebUI에 비해 작다.
+![](/assets/img/content_imgs/stable2.PNG){:. align-center}
+*comfyanonyous/ComyUI 예시*
