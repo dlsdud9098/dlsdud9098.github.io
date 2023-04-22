@@ -25,7 +25,13 @@ tags: [Python, DL, Stable Diffusion]
 
 ## stable diffusion webui
 
-stable diffusion을 웹에서 사용할 수 있게끔 만들어진 프로그램이다.  
-보다 보다 쉽게 접근할 수 있다.  
+stable diffusion을 웹에서 사용할 수 있게끔 만들어진 프로그램이다. 
+가장 유명한 ui는 두개가 있는데,  
+ [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)과, ComfyUI](https://github.com/comfyanonymous/ComfyUI) 이렇게 두 가지가 있다.  
+
+UI를 사용하는 이유는 단순히 코드로 접근하는 것 보다 보다 쉽게 접근할 수 있다.  
 이곳에서 먼저 프롬프트를 만들고, 여러 이미지 실험을 한 뒤에 진행할 예정이다.
 
+### webui와 comfyui의 차이점?
+
+![webui](/assets/img/content_imgs/stable1.PNG)
