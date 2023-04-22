@@ -31,6 +31,10 @@ tags: [Python, DL, Stable Diffusion]
   5. 준비해둔 프롬프트와 openpose, depth를 합침
   6. 새로 나온 사진을 기존의 영상 프레임 수에 맞게 동영상으로 제작
 
+* 사용 모델
+  * checkpoint: [meinapastel(https://civitai.com/models/11866/meinapastel)
+  * Lora: [standing-full-body-with-background-style-lora] https://civitai.com/models/16997/standing-full-body-with-background-style-lora)
+
 ## stable diffusion webui
 
 stable diffusion을 웹에서 사용할 수 있게끔 만들어진 프로그램이다. 
