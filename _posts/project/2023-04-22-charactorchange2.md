@@ -109,3 +109,4 @@ canvas frame, cartoon, 3d, too many fingers, bad art, extra limbs, extra fingers
 
 이렇게 설정을 두고 뽑으면 옆에서 그림이 생성된다.  
 생성된 그림은 자동으로 저장되며, 위치는 ```./outputs/txt2img-images-오늘 날짜```에 저장된다.
+
