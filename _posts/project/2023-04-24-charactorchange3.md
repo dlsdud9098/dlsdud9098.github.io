@@ -113,13 +113,13 @@ pbar.close()
 
 사진 속 인물에서 포즈를 추출하는 것을 말한다.
 
-포즈를 추출하고 이미지를 넣으면, 같은 포즈의 다른 이미지를 만들 수 있다.
+포즈를 추출하고 추출한 이미지를 넣으면, 같은 포즈의 다른 이미지를 만들 수 있다.
 
 ![](https://blog.kakaocdn.net/dn/3llx7/btr4uQG4zjs/kmqiXRhCZAVRJMyEqLMcR1/img.png){: .align-center display: block margin:auto}
-*https://huggingface.co/blog/controlnet*
+*https://loodyrunning.tistory.com/2728*
 
 ![](https://blog.kakaocdn.net/dn/dtdGmV/btr4xLYUWed/wCI1uRaLy1KyNPOuk8qGBK/img.png){: .align-center display: block margin:auto}
-*https://huggingface.co/blog/controlnet*
+*https://loodyrunning.tistory.com/2728*
 
 자세한 내용은 [여기](https://flatsun.tistory.com/3538)에서 확인 할 수 있다.
 
@@ -155,3 +155,61 @@ img = model(INPUT)
 
 ### Depth 가져오기
 
+depth 모델을 가져와 주고 이미지에 depth를 적용한다.
+
+```python
+# Depth
+
+# 필요한 라이브러리들을 import 합니다.
+from transformers import pipeline
+from diffusers import ControlNetModel
+from PIL import Image
+import numpy as np
+import torch
+from tqdm import tqdm
+import glob
+
+# depth-estimation task를 위해 depth_estimator pipeline을 로드합니다.
+depth_estimator = pipeline('depth-estimation')
+
+# ControlNetModel을 로드합니다.
+controlnet = ControlNetModel.from_pretrained(
+    "lllyasviel/sd-controlnet-depth", torch_dtype=torch.float16
+)
+
+# 폴더 내의 모든 이미지를 불러옵니다.
+images = glob('./imgs/*')
+
+# 각 이미지에 대해 depth map을 계산합니다.
+for id, image in tqdm(enumerate(images)):
+
+    # depth_estimator pipeline을 이용하여 depth map을 계산합니다.
+    image = depth_estimator(image)['depth']
+
+    # numpy array로 변환합니다.
+    image = np.array(image)
+
+    # 이미지의 채널을 3으로 바꾸기 위해 새로운 축을 추가합니다.
+    image = image[:, :, None]
+
+    # 새로운 축을 3개로 복사하여 이미지의 채널을 3으로 바꿉니다.
+    image = np.concatenate([image, image, image], axis=2)
+
+    # numpy array를 PIL Image로 변환합니다.
+    image = Image.fromarray(image)
+
+    # 이미지를 저장합니다.
+    image.save(f'./depth_imgs/depth_imgs{str(id).zfill(5)}.png')
+
+```
+
+## 결과
+
+![original](/assets/img/content_imgs/stable7.jpg){: .align-center}
+*원본*
+
+![depth](/assets/img/content_imgs/stable8.png){: .align-center}
+*depth*
+
+![pose](/assets/img/content_imgs/stable9.png){: .align-center}
+*pose*
