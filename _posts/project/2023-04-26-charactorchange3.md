@@ -101,11 +101,9 @@ pbar.close()
 
 인물을 바꾸는데는 **Canny**를 사용해도 되지만, 생김새도 바뀌기 때문에 depth로 충분하다고 생각했다.
 
-![](https://blog.kakaocdn.net/dn/bikUui/btr5OQew9Xv/eoVxV24kqxYVWmq3lGhd00/img.jpg){: .align-center width:"600" height:"800" display: block margin:auto}
-*https://zzambab98.tistory.com/230*
+![](/assets/img/content_imgs/stable12.png){: .align-center width:"600" height:"800" display: block margin:auto}
 
-![](https://blog.kakaocdn.net/dn/dixLUd/btr5ZkkyREm/rMBNvnwli3hgHuOi41okU0/img.jpg){: .align-center width:"512" height:"768" display: block margin:auto}
-*https://zzambab98.tistory.com/230*
+![](/assets/img/content_imgs/stable11.png){: .align-center width:"512" height:"768" display: block margin:auto}
 
 더 자세한 내용은 [여기](https://flatsun.tistory.com/3632)에서 확인할 수 있다.
 
@@ -115,11 +113,9 @@ pbar.close()
 
 포즈를 추출하고 추출한 이미지를 넣으면, 같은 포즈의 다른 이미지를 만들 수 있다.
 
-![](https://blog.kakaocdn.net/dn/3llx7/btr4uQG4zjs/kmqiXRhCZAVRJMyEqLMcR1/img.png){: .align-center display: block margin:auto}
-*https://loodyrunning.tistory.com/2728*
+![](/assets/img/content_imgs/stable13.png){: .align-center display: block margin:auto}
 
-![](https://blog.kakaocdn.net/dn/dtdGmV/btr4xLYUWed/wCI1uRaLy1KyNPOuk8qGBK/img.png){: .align-center display: block margin:auto}
-*https://loodyrunning.tistory.com/2728*
+![](/assets/img/content_imgs/stable14.png){: .align-center display: block margin:auto}
 
 자세한 내용은 [여기](https://flatsun.tistory.com/3538)에서 확인 할 수 있다.
 
@@ -140,6 +136,9 @@ img_files = glob('./imgs/*')
 img_files.sort()
 imgs = [load_image(img) for img in img_files]
 ```
+
+참고로 ```glob()```은 가지고 올 때 정렬되지 않으므로 정렬을 해 줘야 한다.  
+하지 않으면, 나중에 이미지를 합칠때 서로 다른 이미지 이기 때문에 이상한 그림이 나오거나 할 수 있다.
 
 그리고 모델에 이미지를 넣어주면 된다.
 
@@ -179,6 +178,9 @@ controlnet = ControlNetModel.from_pretrained(
 
 # 폴더 내의 모든 이미지를 불러옵니다.
 images = glob('./imgs/*')
+
+# 이미지들을 정렬합니다.
+images.sort()
 
 # 각 이미지에 대해 depth map을 계산합니다.
 for id, image in tqdm(enumerate(images)):
