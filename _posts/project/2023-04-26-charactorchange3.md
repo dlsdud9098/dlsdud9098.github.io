@@ -5,7 +5,7 @@ categories: [Project, Character Change]
 tags: [Python, DL, Stable Diffusion]
 ---
 
-> 현재 개발중으로 글이 수정될 수 있습니다.(2023.04.22)
+> 현재 개발중으로 글이 수정될 수 있습니다.(2023.04.26)
 
 ## Web이 아닌 코드로
 
