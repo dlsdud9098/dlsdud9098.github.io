@@ -32,8 +32,8 @@ tags: [Python, DL, Stable Diffusion]
   6. 새로 나온 사진을 기존의 영상 프레임 수에 맞게 동영상으로 제작
 
 * 사용 모델
-  * checkpoint: [meinapastel(https://civitai.com/models/11866/meinapastel)
-  * Lora: [standing-full-body-with-background-style-lora] https://civitai.com/models/16997/standing-full-body-with-background-style-lora)
+  * checkpoint: [meinapastel](https://civitai.com/models/11866/meinapastel)
+  * Lora: [standing-full-body-with-background-style-lora](https://civitai.com/models/16997/standing-full-body-with-background-style-lora)
 
 ## stable diffusion webui
 
