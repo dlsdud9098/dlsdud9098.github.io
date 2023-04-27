@@ -47,7 +47,7 @@ checkpoint와 lora의 모델들은 [Civitai](https://civitai.com/)에서 구할 
 
 > ./models/Stable-diffusion  
 > ./models/Lora  
-> 
+
 에 각각 checkpoint와 lora를 넣으면 된다.
 
 ## 이미지 생성 종류
@@ -79,7 +79,7 @@ checkpoint와 lora의 모델들은 [Civitai](https://civitai.com/)에서 구할 
 각각 프롬프트에 자주 들어가는 단어들이 있다.
 ```
 Positive Prompt
-masterpiece, best quality, ultra-detailed, higres, 8k, UHD, detailed face, intricate details, detailed lighting
+masterpiece, best quality, ultra-detailed, higres, 8k, UHD, detailed face, intricate details, detailed lighting 등등...
 
 Negative Prompt
 canvas frame, cartoon, 3d, too many fingers, bad art, extra limbs, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, ugly, long neck 등등..
