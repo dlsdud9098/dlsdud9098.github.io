@@ -17,11 +17,12 @@ tags: [Python, DL, Stable Diffusion]
 약 한 달 동안 진행될 예정이다.
 
 * 개발 환경
-  * Windows 10, Ubuntu-20.04
-  * Python
-  * VSCode
-  * WebUI, ComfyUI
-  * requirements
+  * OS: Windows 10, Ubuntu-20.04
+  * Language: Python
+  * Editor: VSCode
+  * UI: WebUI, ComfyUI
+  * Install Packages: requirements
+  * Core Packages: diffuers, xformers, transformers
 
 * 진행 계획
   1. stable_diffusion에서 원하는 사진이 나오도록 프롬프트 제작
