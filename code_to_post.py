@@ -68,25 +68,7 @@ def convert_tag_to_markdown(tag):
     return content
 #%%
 # 프로그래머스
-def programmers(file, now_date):    
-    # file_name = os.path.basename(file)
-    # code_number = file_name.split('_')[1][:-3]
-    # # url
-    # programmers_url = f'https://school.programmers.co.kr/learn/courses/30/lessons/{code_number}'
-    
-    # rq = requests.get(programmers_url)
-    # soup = BeautifulSoup(rq.text, 'html.parser')
-    
-    # # 본문
-    # content = soup.select_one('#tour2 > div')
-    # content = convert_tag_to_markdown(content)
-    # content = content + '\n\n' + programmers_url
-    # # 제목
-    # title = soup.select_one('#tab > li')
-    
-    # print(content)
-    # return content, title
-
+def programmers(file, now_date):
     file_name = os.path.basename(file)
     code_number = file_name.split('_')[1][:-3]
     # url
@@ -98,10 +80,10 @@ def programmers(file, now_date):
     # 본문
     content = soup.select_one('#tour2 > div')
     content = convert_tag_to_markdown(content)
-    content = content + '\n\n' + programmers_url
+    content = content + '\n\n' + f'[문제 링크]({programmers_url})'
 
     # 제목
-    title = soup.select_one('#tab > li').text.replace('\n', '').replace(' ', '')
+    title = soup.select_one('#tab > li').text.replace('\n', '').strip()
 
     title = f'''
 ---
@@ -111,8 +93,6 @@ tags: [Programmers, Python, Algorithms]
 ---
 '''.lstrip() + '\n\n'
 
-
-    # print(title)
     content = title + content
     with open(f'./_posts/programmers/{now_date}-programmers{code_number}.md', 'w', encoding='utf-8') as file:
         file.write(content)
