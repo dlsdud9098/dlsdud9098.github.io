@@ -71,6 +71,7 @@ def convert_tag_to_markdown(tag):
 def programmers(file, now_date):
     file_name = os.path.basename(file)
     code_number = file_name.split('_')[1][:-3]
+    
     # url
     programmers_url = f'https://school.programmers.co.kr/learn/courses/30/lessons/{code_number}'
 
@@ -113,7 +114,6 @@ file_list = glob(originally_code_files_folder+'*')
 # file_list = glob('.\\code_files\\*')
 
 for file in file_list:
-    print(file)
     file_creation_time = os.path.getctime(file)
     file_creation_time = datetime.datetime.fromtimestamp(file_creation_time)
     file_creation_time = file_creation_time.strftime('%Y-%m-%d')
@@ -122,9 +122,11 @@ for file in file_list:
     if file_creation_time == today_date:
         # 프로그래머스 파일 일 경우
         if 'programmers' in file:
+            print(file)
             programmers(file, file_creation_time)
         # 백준 파일 일 경우
         elif 'baekjoon' in file:
+            print(file)
             baekjoon(file, file_creation_time)
             
 # %%
