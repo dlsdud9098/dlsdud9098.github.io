@@ -92,7 +92,7 @@ tags: [Programmers, Python, Algorithms]
     content = title + content
     
     # 코드 넣기
-    with open(file, 'r') as f:
+    with open(file, 'r', encoding='utf-8') as f:
         file_content = ''.join(f.readlines())
     
     file_content = '```python\n' + file_content + '\n```'
