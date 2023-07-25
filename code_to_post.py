@@ -51,6 +51,11 @@ def convert_tag_to_markdown(tag):
     
     content = content.replace('####', '##')
     
+    content = content.replace('## 문제 설명', '## 💡문제 설명\n')
+    content = content.replace('## 제한사항', '## 🚫제한사항\n')
+    content = content.replace('## 입출력 예 설명', '## 🔍입출력 예 설명\n')
+    content = content.replace('## 입출력 예', '## 🔢입출력 예\n\n')
+
     # 이미지 변경
     if '<img' in content:
         def img_to_md(match):
@@ -81,7 +86,6 @@ def programmers(file, now_date):
     # 본문
     content = soup.select_one('#tour2 > div')
     content = convert_tag_to_markdown(content)
-    content = content + '\n\n' + f'[문제 링크]({programmers_url})'
 
     # 제목
     title = soup.select_one('#tab > li').text.replace('\n', '').strip()
@@ -95,6 +99,14 @@ tags: [Programmers, Python, Algorithms]
 '''.lstrip() + '\n\n'
 
     content = title + content
+    
+    with open(file, 'r') as f:
+        file_content = ''.join(f.readlines())
+    
+    file_content = '```python\n' + file_content + '\n```'
+    content = content + '\n\n\n## 💻코드\n' + file_content
+    content = content + '\n\n---\n\n' + f'[문제 링크]({programmers_url})'
+    
     with open(f'./_posts/programmers/{now_date}-programmers{code_number}.md', 'w', encoding='utf-8') as file:
         file.write(content)
     
