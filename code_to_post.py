@@ -123,9 +123,20 @@ today_date = today_date.strftime('%Y-%m-%d')
 # 코드 파일 폴더 명
 originally_code_files_folder = '.\\code_files\\'
 file_list = glob(originally_code_files_folder+'*')
-# file_list = glob('.\\code_files\\*')
+
+
+# 포스트 파일 폴더 명
+post_folder_path = '.\\_posts\\programmers\\'
+post_list = glob(post_folder_path+'*')
+
+post_file_list = [os.path.basename(post)[22:-3] for post in post_list]
 
 for file in file_list:
+    code_number = os.path.basename(file).split('_')[1][:-3]
+    
+    if code_number in post_file_list:
+        continue
+    
     file_creation_time = os.path.getctime(file)
     file_creation_time = datetime.datetime.fromtimestamp(file_creation_time)
     file_creation_time = file_creation_time.strftime('%Y-%m-%d')
@@ -142,3 +153,4 @@ for file in file_list:
             baekjoon(file, file_creation_time)
             
 # %%
+
