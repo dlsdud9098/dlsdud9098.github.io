@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "python -m venv venv error"
-categories: [Project, Character Change]
+categories: [Coding, Python]
 tags: [Python, venv, error]
 ---
 
@@ -19,9 +19,10 @@ python, python3.9, python3.10 등 다 안된다.
 
 pip 명령등의 실행할 수 있는 파일이 없어서 그렇다고 한다.
 
-## 해결 
+## 해결
 
 without-pip 옵션으로 환경 셋팅 후 설치하는 방식으로 진행하면 된다.
+
 ```bash
 python3 -m venv env --without-pip
 source ./env/bin/activate

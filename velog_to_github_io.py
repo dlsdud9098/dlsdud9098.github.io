@@ -92,6 +92,63 @@ for i in range(1, 9):
 
 	for item in content['result']:
 		file_feature[item['id']] = item['finishedAt'][:10]
+  
+#%%
+
+# html -> md
+def convert_tag_to_markdown(tag):
+    content = tag.decode_contents()
+
+    content = content.replace("<code>", "`")
+    content = content.replace("</code>", "`")
+
+    content = content.replace("<h5>", "#### ")
+    content = content.replace("</h5>", "")
+    
+    content = content.replace('<h6 class="guide-section-title">', "#### ")
+    content = content.replace("</h6>", "")
+    
+    content = re.sub(r"<div.*?>", "", content)
+    content = content.replace('</div>', '')
+
+    content = content.replace("<hr/>", "\n---")
+
+    content = content.replace("<ul>", "")
+    content = content.replace("<li>", "- ")
+    content = content.replace("</ul>", "")
+    content = content.replace("</li>", "")
+    
+    content = content.replace("<p>", "\n\n")
+    content = content.replace("</p>", "\n\n")
+    
+    content = content.replace('<pre class="codehilite">', '``')
+    content = content.replace('</pre>', '``')
+    
+    content = content.replace('```', '```\n')
+    
+    
+    content = content.replace('####', '##')
+    
+    content = content.replace('## 문제 설명', '## 💡문제 설명\n')
+    content = content.replace('## 제한사항', '## 🚫제한사항\n')
+    content = content.replace('## 입출력 예 설명', '## 🔍입출력 예 설명\n')
+    content = content.replace('## 입출력 예', '## 🔢입출력 예\n\n')
+
+    # 이미지 변경
+    if '<img' in content:
+        def img_to_md(match):
+            alt = match.group('alt')
+            src = match.group('src')
+            title = match.group('title')
+            return f'\n![{alt}]({src} "{title}")\n\n'
+        
+        img_regex = r'<img\s+.*?alt="(?P<alt>.*?)".*?src="(?P<src>.*?)".*?title="(?P<title>.*?)".*?>'
+        content = re.sub(img_regex, img_to_md, content)
+        
+    # 맨 앞에 이미지 추가
+    content = '![](/assets/img/content_imgs/programmers_img.png)\n' + content
+
+    return content
 #%%
 # file_list = glob(r'C:\Users\inyoung\Desktop\git_programmers\*')
 file_list = glob(r'../git_programmers/now/*')
@@ -100,10 +157,34 @@ file_names = os.listdir('../git_programmers/now/')
 file_create_date = {}
 now_date_upload_llist = []
 
-# file_list = file_list[:1]
-# file_names = file_names[:1]
+def programmers(file, now_date):
+    file_name = os.path.basename(file)
+    code_number = file_name.split('_')[1][:-3]
+    
+    # url
+    programmers_url = f'https://school.programmers.co.kr/learn/courses/30/lessons/{code_number}'
 
-# print(file_list, file_names)
+    rq = requests.get(programmers_url)
+    soup = BeautifulSoup(rq.text, 'html.parser')
+
+    # 본문
+    content = soup.select_one('#tour2 > div')
+    content = convert_tag_to_markdown(content)
+    
+    # 코드 넣기
+    with open(file, 'r', encoding='utf-8') as f:
+        file_content = ''.join(f.readlines())
+    
+    file_content = '```python\n' + file_content + '\n```'
+    content = content + '\n\n\n## 💻코드\n' + file_content
+    # 문제 링크 넣기
+    content = content + '\n\n---\n\n' + f'[문제 링크]({programmers_url})'
+
+today_date = datetime.date.today()
+
+today_date = today_date.strftime('%Y-%m-%d')
+
+
 i = 0
 for idx, file in zip(file_names, file_list):
 	# print(idx)
