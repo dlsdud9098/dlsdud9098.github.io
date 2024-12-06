@@ -176,6 +176,27 @@ kramdown:
   math_engine_opts:    {}
   footnote_backlink:   '&#x21a9;&#xfe0e;'
 
+comments:
+
+  provider:            giscus
+
+utterances:
+  repo:                "dlsdud9098/dlsdud9098.github.io"
+  issue-term:          "pathname"
+  label:               "Comments"
+  theme:               "dark-blue"
+
+giscus:
+  repo:                "dlsdud9098/dlsdud9098.github.io"
+  repo-id:             "R_kgDONZ2RXg"
+  category:            "Comments"
+  category-id:         "DIC_kwDONZ2RXs4Ck-rx"
+  mapping:             "pathname"
+  reaction-enabled:    "1"
+  theme:               "dark_dimmed"
+  crossorigin:         "anonymous"
+
+
 
 # Hydejack Settings
 # ----------------------------------------------------------------------------------------
