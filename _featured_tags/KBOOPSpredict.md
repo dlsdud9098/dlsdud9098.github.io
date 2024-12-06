@@ -1,7 +1,7 @@
 ---
 layout: tag-list
 type: tag
-title: KBO OPS 예측 경진대회
+title: KBO 타자 OPS 예측 경진대회
 slug: kboopspredict
 category: devlog
 sidebar: true
