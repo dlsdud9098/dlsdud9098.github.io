@@ -2,7 +2,7 @@
 layout: post
 title: "정규표현식으로 괄호, 특수문자 제거"
 category: studylog
-tags: python, conda
+tags: python
 ---
 
 

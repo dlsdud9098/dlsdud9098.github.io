@@ -2,7 +2,7 @@
 layout: post
 title: "conda create, activate 오류"
 category: studylog
-tags: python, conda
+tags: python
 ---
 
 

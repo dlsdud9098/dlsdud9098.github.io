@@ -2,7 +2,7 @@
 layout: post
 title: "vscode 주피터 노트북 삭제된 셀 복구하기"
 category: studylog
-tags: python, vscode ,jupyter
+tags: python
 ---
 
 
