@@ -10,8 +10,8 @@ description: >
    백준 / 프로그래머스에서 푼 문제들
 ---
 
-[백준]{:.heading.flip-title}
-[프로그래머스]{:.heading.flip-title}
+* [백준]{:.heading.flip-title}
+* [프로그래머스]{:.heading.flip-title}
 {:.related-posts.faded}
 
 
