@@ -30,9 +30,8 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 {:.related-posts.faded}
 
 ## 알고리즘
-* [LICENSE]{:.heading.flip-title} --- The license of this project.
-* [NOTICE]{:.heading.flip-title} --- Parts of this program are provided under separate licenses.
-* [CHANGELOG]{:.heading.flip-title} --- Version history of Hydejack.
+* [프로그래머스]{:.heading.flip-title} --- 프로그래머스 사이트 알고리즘 문제 풀기
+* [백준]{:.heading.flip-title} --- 백준 사이트 알고리즘 문제 풀기
 {:.related-posts.faded}
 
 [디스코드]: discord.md
