@@ -36,8 +36,8 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 {:.related-posts.faded}
 
 [디스코드]: discord.md
-[upgrade]: upgrade.md
-[config]: config.md
+[파이썬]: python.md
+[기타]: about.md
 [basics]: basics.md
 [writing]: writing.md
 [scripts]: scripts.md
