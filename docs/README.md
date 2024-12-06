@@ -15,9 +15,9 @@ While this manual tries to be beginner-friendly, as a user of Jekyll it is assum
 
 
 ## 코딩
-* [Install]{:.heading.flip-title} --- How to install and run Hydejack.
-* [Upgrade]{:.heading.flip-title} --- You can skip this if you haven't used Hydejack before.
-* [Config]{:.heading.flip-title} --- Once Jekyll is running you can start editing your config file.
+* [디스코드]{:.heading.flip-title} --- 디스코드 봇 개발
+* [파이썬]{:.heading.flip-title} --- 파이썬 개발
+* [기타]{:.heading.flip-title} --- 기타
 {:.related-posts.faded}
 
 ## 아무거나 만들어봄
