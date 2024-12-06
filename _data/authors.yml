@@ -26,8 +26,8 @@ author1:
   # You can also provide an absolute URL (starting with https://) instead of usernames
   social:
     # twitter:         <username>
-    github:          <dlsdud9098>
-    email:           <dlsdud9098@naver.com>
+    github:          dlsdud9098
+    email:           dlsdud9098@naver.com
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
@@ -90,5 +90,5 @@ author2:
 
   picture:           https://placehold.it/128x128
   # twitter:           <username>
-  github:            <dlsdud9098>
-  email:             <dlsdud9098@naver.com>
+  github:            dlsdud9098
+  email:             dlsdud9098@naver.com
