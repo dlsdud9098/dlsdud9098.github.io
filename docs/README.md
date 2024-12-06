@@ -1,17 +1,17 @@
 ---
 layout: page
-title: Documentation
+title: Category
 description: >
-  Here you should be able to find everything you need to know to accomplish the most common tasks when blogging with Hydejack.
+  카테고리 화면입니다.
 hide_description: true
 sitemap: false
 permalink: /docs/
 ---
 
-Here you should be able to find everything you need to know to accomplish the most common tasks when blogging with Hydejack.
+<!-- Here you should be able to find everything you need to know to accomplish the most common tasks when blogging with Hydejack.
 
 While this manual tries to be beginner-friendly, as a user of Jekyll it is assumed that you are comfortable running shell commands and editing text files.
-{:.note}
+{:.note} -->
 
 
 ## Getting started

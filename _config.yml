@@ -51,7 +51,7 @@ author:
 menu:
   - title:             All Posts
     url:               /example/
-  - title:             Documentation
+  - title:             Category
     url:               /docs/
   - title:             About
     url:               /about/
