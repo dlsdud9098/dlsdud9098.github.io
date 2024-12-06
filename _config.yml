@@ -52,7 +52,7 @@ menu:
   - title:             All Posts
     url:               /example/
   - title:             Category
-    url:               /posts/
+    url:               /docs/
   - title:             About
     url:               /about/
 
