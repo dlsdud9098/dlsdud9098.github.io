@@ -34,18 +34,18 @@ spotify:
 telegram:
   name: Telegram
   icon: icon-telegram
-twitter:
-  name: X / Twitter
-  icon: icon-twitter
-  prepend: 'https://x.com/'
+# twitter:
+#   name: X / Twitter
+#   icon: icon-twitter
+#   prepend: 'https://x.com/'
 twitter-old:
   name: Twitter
   icon: icon-twitter-old
   prepend: 'https://twitter.com/'
-x:
-  name: X
-  icon: icon-twitter
-  prepend: 'https://x.com/'
+# x:
+#   name: X
+#   icon: icon-twitter
+#   prepend: 'https://x.com/'
 vine:
   name: Vine
   icon: icon-vine
@@ -112,7 +112,7 @@ ondrive:
 github:
   name: GitHub
   icon: icon-github
-  prepend: "https://github.com/"
+  prepend: "https://github.com/dlsdud9098"
 npm:
   name: npm
   icon: icon-npm
