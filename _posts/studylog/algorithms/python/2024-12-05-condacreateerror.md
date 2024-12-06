@@ -20,5 +20,5 @@ source /usr/anaconda3/etc/profile.d/conda.sh
 
 그리고 다시 하면 정상 작동한다.
 
-# ref
+### ref
 https://velog.io/@moonjs1018/Python-conda-%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD-activate-%EC%98%A4%EB%A5%98
