@@ -5,7 +5,7 @@ description: >
   카테고리 화면입니다.
 hide_description: true
 sitemap: false
-permalink: /posts/
+permalink: /docs/
 ---
 
 <!-- Here you should be able to find everything you need to know to accomplish the most common tasks when blogging with Hydejack.
