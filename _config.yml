@@ -42,8 +42,8 @@ logo:                  /assets/img/logo.png
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                <Seo> <Inyoung>
+  email:               <dlsdud9098@naver.com>
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
@@ -364,7 +364,7 @@ plugins:
 #   name:                <firstname> <lastname>
 #   links:
 #     - https://twitter.com/<username>
-#     - https://github.com/<username>
+#     - https://github.com/dlsdud9098
 
 
 # Plugin Configs
