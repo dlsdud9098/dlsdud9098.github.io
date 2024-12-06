@@ -360,11 +360,11 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/dlsdud9098
+social:
+  name:                <firstname> <lastname>
+  links:
+    # - https://twitter.com/<username>
+    - https://github.com/dlsdud9098
 
 
 # Plugin Configs
