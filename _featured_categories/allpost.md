@@ -1,8 +1,8 @@
 ---
 layout: list
 type: category
-title: About
-slug: about
+title: All_Posts
+slug: allposts
 sidebar: true
 order: 1
 description: >
