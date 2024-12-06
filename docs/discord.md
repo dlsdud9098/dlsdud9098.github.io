@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Discord
+title: 디스코드
 description: >
   How you install Hydejack depends on whether you start a new site,
   or change the theme of an existing site.
