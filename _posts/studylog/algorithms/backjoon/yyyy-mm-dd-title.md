@@ -1,0 +1,20 @@
+---
+layout: post
+title: "백준 - 1"
+category: studylog
+tags: algorithms
+---
+
+## 입출력과 사칙연산
+
+### 1-1
+
+### 제목: Hello World
+
+문제: Hello World!를 출력하시오.
+
+```python
+print('Hello World!')
+```
+
+https://www.acmicpc.net/problem/2557
