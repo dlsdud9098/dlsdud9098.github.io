@@ -16,8 +16,7 @@ tags: others_post
   <!-- 마진은 위아래만 조절하는 것이 정신건강에 좋을 듯 하다. 이미지가 커지면 깨지는 경우가 있는 듯 하다.-->
   <img style="margin:50px 0 10px 0" src="https://velog.velcdn.com/images/dlsdud9098/post/60694807-8be1-4bc5-b1f7-95d225ce297c/image.png"/>
   모바일에서 vscode.dev에 접속에 파이썬 코드를 실행시킬 때 커널 선택 창에는 2가지 방법만 나온다.
-</p> 
-
+</p>
 
 이러한 문제를 해결하기 위해 방법을 찾던 도중, termux를 통해 우분투를 설치하고 거기에 code server를 설치하여 jupyter 서버를 열듯 사용 할 수 있다는 것을 알았다.
 
@@ -26,8 +25,9 @@ tags: others_post
 사용 기기: Samsung Galaxy S8 Ultra
 
 ## 3. termux 설치
+
 먼저 안드로이드에 우분투를 설치하기 위해 termux를 설치해야 한다.  
-구글 플레이 스토어에도 termux가 있지만 이것으로 했을 때는 잘 되지 않았다.  
+구글 플레이 스토어에도 termux가 있지만 이것으로 했을 때는 잘 되지 않았다.
 
 다른 포스팅에서도 플레이스토에서 다운로드 하지 않고 깃허브에 있는 [termux-app](https://github.com/termux/termux-app/releases)를 사용했다.
 
@@ -36,6 +36,7 @@ tags: others_post
 ## 4. 우분투 설치
 
 ### 4-1. 설치 전 termux 업데이트
+
 먼저 업데이터를 해준다.
 
 ```bash
@@ -57,12 +58,13 @@ pkg install proot-distro
 -- 설치할 수 있는 OS 리스트를 나타내는 것 같다.
 proot-distro list
 ```
-![](https://velog.velcdn.com/images/dlsdud9098/post/240c574c-91bf-49d2-8246-ee7b7ff0de9c/image.jpg)
 
+![](https://velog.velcdn.com/images/dlsdud9098/post/240c574c-91bf-49d2-8246-ee7b7ff0de9c/image.jpg)
 
 이제 우분투를 설치하자
 
 ### 4-2. 본격적으로 우분투 설치
+
 ```bash
 -- 우분투 설치
 proot-distro ubuntu
@@ -73,9 +75,10 @@ proot-distro ubuntu
 그러면 이렇게 ubuntu가 설치된다.
 
 이제 **proot-distro login**으로 우분투에 접속한다.  
-그러면 **root@localhost:~#**으로 우분투에 접속된다.  
+그러면 **root@localhost:~#**으로 우분투에 접속된다.
 
 ### 4-3. 업데이트
+
 이후 우분투에서 사용하듯이 업데이트를 해준다.
 
 ```bash
@@ -83,6 +86,7 @@ apt update && apt upgrade -y
 ```
 
 ### 4-4. vim 설치
+
 그 다음 vim을 설치했다.
 
 ```bash
@@ -90,11 +94,13 @@ apt install vim
 ```
 
 ### 4-5. user 만들기
+
 이제 user를 만들어준다.
 
 ```bash
 adduser {이름}
 ```
+
 그 다음 비밀 번호를 2번 입력해 주고
 다른 기타 정보들도 입력해 준다.
 
@@ -115,7 +121,9 @@ vim /etc/sudoers
 **{이름} ALL=(ALL:ALL) ALL**를 추가하고 저장한다.
 
 다음에 **su {이름}**을 하면 (이름은 위에서 정한 user 이름)
+
 ![](https://velog.velcdn.com/images/dlsdud9098/post/0723512b-ca6f-4496-9525-9e498bb07c7c/image.png)
+
 이렇게 접속할 수 있다.
 
 **저 상태에서 code-server를 설치하려고 했는데 문제가 발생해서 다시 root 계정으로 되돌아와 설치했다.**
@@ -124,13 +132,11 @@ vim /etc/sudoers
 
 [code-server](https://github.com/coder/code-server/releases/tag/v4.97.2)
 
-
 <p align="center" style="color:gray">
   <!-- 마진은 위아래만 조절하는 것이 정신건강에 좋을 듯 하다. 이미지가 커지면 깨지는 경우가 있는 듯 하다.-->
   <img style="margin:50px 0 10px 0" src="https://velog.velcdn.com/images/dlsdud9098/post/37700ae8-538f-450d-8928-e103a164fe90/image.png"/>
   바로 위에 있는 파일과 이름과 용량이 같은데 위에 것으로 했을 때는 안됐다....
-</p> 
-
+</p>
 
 ```bash
 apt install wget
@@ -138,6 +144,7 @@ apt install wget
 -- code-server 설치
 wget https://github.com/coder/code-server/releases/download/v4.97.2/code-server-4.97.2-linux-amd64.tar.gz
 ```
+
 ![](https://velog.velcdn.com/images/dlsdud9098/post/192532b9-6b8e-4b06-a5eb-512a6769a23f/image.png)
 
 그리고 압축을 풀어주고 code-server를 실행한다.
@@ -168,9 +175,8 @@ export PASSWORD="1234"
 ![](https://velog.velcdn.com/images/dlsdud9098/post/117fb3b7-97b3-4135-9360-3b557bf0ab18/image.png)
 이렇게 vscode.dev 처럼 인터넷에서 vscode를 사용할 수 있다!
 
-
-
 ## 5. vscode 사용하기
+
 vscode에 접속하고 폴더를 열어보면 root 폴더에 들어가 있다.  
 여기서 대충 폴더 하나 만들고 jupyter 파일도 하나 만들어서 실행시키려고 하면
 
@@ -216,21 +222,25 @@ python3 -m pip install ipykernel --break-system-packages
 sudoers에서 문제가 발생했는데, root 계정에 들어가 /etc/sudoers의 권한을 440으르 설정했더니 정상적으로 작동됐다.(sudo가 안됐었음)
 
 그리고 sudo 계정으로 code-server에 섭속할 때 비밀번호가 틀려서 접속이 안돼는 경우가 있었는데, 이 부분은 처음에 실행할 때 --auth none을 넣어주면 된다.
+
 ```bash
 sudo ./code-server --auth none
 ```
+
 --auth가 실행할 때 어떤 방식으로 실행할지(password, none) 정하는 것인데 기본 설정인 password로 하면 우리가 설정한 password(지금은 안돼는)로 접속하고 none으로 하면 로그인 없이 바로 접속된다.
 
 아쉽게도 jupyter는 사용하지 못하지만 파이썬 파일은 정상 작동하니까 그냥 사용하려고 한다.
 
 ## 6. 속도 비교
+
 일단 가능은 하니까 속도를 한 번 비교해 보았다.  
 코드 제공은 chatgpt
 
 PC -> ubuntu 24.04, 19-13900kf, rtx3060, 80GB RAM
 MOBILE -> Galaxy S8 Ultra
 
-1. 
+1.
+
 ```python
 import time
 
@@ -262,6 +272,7 @@ pc -> 약 0.4초
 mobile -> 약 2초
 
 2.
+
 ```python
 import time
 import numpy as np
@@ -284,18 +295,18 @@ def file_operations():
     directory = 'test_files'
     if not os.path.exists(directory):
         os.mkdir(directory)
-    
+
     # 파일 쓰기
     for i in range(1000):
         with open(f'{directory}/file_{i}.txt', 'w') as f:
             f.write(''.join(random.choices(string.ascii_letters + string.digits, k=1000)))
-    
+
     # 파일 읽기
     files = os.listdir(directory)
     for file in files:
         with open(f'{directory}/{file}', 'r') as f:
             f.read()
-    
+
     # 임시 파일 삭제
     for file in files:
         os.remove(f'{directory}/{file}')
@@ -345,6 +356,7 @@ execution_time = end_time - start_time
 
 print(f"Total Execution Time: {execution_time:.2f} seconds")
 ```
+
 pc -> 약 0.46초
 mobile -> 약 3.91초
 
@@ -355,6 +367,7 @@ mobile -> 약 3.91초
 이렇게 하면 우분투에 다시 접속하게된다.
 
 ## 7. 참고자료
+
 https://www.codewithharry.com/blogpost/install-vs-code-in-android/
 https://m.blog.naver.com/wonjinho81/222597996987
 https://multitab.tistory.com/266
