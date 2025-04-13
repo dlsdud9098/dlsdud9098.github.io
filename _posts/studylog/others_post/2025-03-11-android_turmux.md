@@ -26,8 +26,8 @@ tags: others_post
 사용 기기: Samsung Galaxy S8 Ultra
 
 ## 3. termux 설치
-먼저 안드로이드에 우분투를 설치하기 위해 termux를 설치해야 한다.
-구글 플레이 스토어에도 termux가 있지만 이것으로 했을 때는 잘 되지 않았다.
+먼저 안드로이드에 우분투를 설치하기 위해 termux를 설치해야 한다.  
+구글 플레이 스토어에도 termux가 있지만 이것으로 했을 때는 잘 되지 않았다.  
 
 다른 포스팅에서도 플레이스토에서 다운로드 하지 않고 깃허브에 있는 [termux-app](https://github.com/termux/termux-app/releases)를 사용했다.
 
@@ -171,7 +171,7 @@ export PASSWORD="1234"
 
 
 ## 5. vscode 사용하기
-vscode에 접속하고 폴더를 열어보면 root 폴더에 들어가 있다.
+vscode에 접속하고 폴더를 열어보면 root 폴더에 들어가 있다.  
 여기서 대충 폴더 하나 만들고 jupyter 파일도 하나 만들어서 실행시키려고 하면
 
 ![](https://velog.velcdn.com/images/dlsdud9098/post/c09fe4c0-5a25-444a-b815-f091b8768dec/image.png)
@@ -185,10 +185,10 @@ vscode에 접속하고 폴더를 열어보면 root 폴더에 들어가 있다.
 ![](https://velog.velcdn.com/images/dlsdud9098/post/a668fbaf-8001-4d9d-ac1b-7b25db62bda4/image.png)
 pip가 없다고 나온다.
 
-아마 vscode에서 설치되는 것은 최소한만 설치되는 것 같다.
+아마 vscode에서 설치되는 것은 최소한만 설치되는 것 같다.  
 (그냥 python 파일을 만들어서 실행하면 정상적으로 작동된다. 아마 pip에서 문제가 생긴듯 하다.)
 
-터미널에서 파이썬을 설치해주자.
+터미널에서 파이썬을 설치해주자.  
 (나는 서버 끄기 귀찮아서 vscode의 터미널을 활용했다.)
 
 ```bash
@@ -212,7 +212,7 @@ python3 -m pip install ipykernel --break-system-packages
 
 이렇게 pandas 패키지도 설치하여 사용할 수 있었다.
 
-참고로 저 사진은 sudo 계정으로 들어가 다시 설치하고 들어가 실행한 상황이다.
+참고로 저 사진은 sudo 계정으로 들어가 다시 설치하고 들어가 실행한 상황이다.  
 sudoers에서 문제가 발생했는데, root 계정에 들어가 /etc/sudoers의 권한을 440으르 설정했더니 정상적으로 작동됐다.(sudo가 안됐었음)
 
 그리고 sudo 계정으로 code-server에 섭속할 때 비밀번호가 틀려서 접속이 안돼는 경우가 있었는데, 이 부분은 처음에 실행할 때 --auth none을 넣어주면 된다.
@@ -224,7 +224,7 @@ sudo ./code-server --auth none
 아쉽게도 jupyter는 사용하지 못하지만 파이썬 파일은 정상 작동하니까 그냥 사용하려고 한다.
 
 ## 6. 속도 비교
-일단 가능은 하니까 속도를 한 번 비교해 보았다.
+일단 가능은 하니까 속도를 한 번 비교해 보았다.  
 코드 제공은 chatgpt
 
 PC -> ubuntu 24.04, 19-13900kf, rtx3060, 80GB RAM
@@ -350,8 +350,8 @@ mobile -> 약 3.91초
 
 대충 2배에서 3배정도 차이가 나는데 이정도면 대단한건 못하더라도, 알고리즘 공부할 때는 유용할 것 같다.
 
-그리고 나중에 껏다가 키면 다시 로그인 해야하는데
-**proot-distro login ubuntu**
+그리고 나중에 껏다가 키면 다시 로그인 해야하는데  
+**proot-distro login ubuntu**  
 이렇게 하면 우분투에 다시 접속하게된다.
 
 ## 7. 참고자료
