@@ -72,8 +72,8 @@ proot-distro ubuntu
 
 그러면 이렇게 ubuntu가 설치된다.
 
-이제 **proot-distro login**으로 우분투에 접속한다.
-그러면 **root@localhost:~#**으로 우분투에 접속된다.
+이제 **proot-distro login**으로 우분투에 접속한다.  
+그러면 **root@localhost:~#**으로 우분투에 접속된다.  
 
 ### 4-3. 업데이트
 이후 우분투에서 사용하듯이 업데이트를 해준다.
