@@ -5,6 +5,8 @@ category: studylog
 tags: others_post
 ---
 
+<br>
+
 ## 1. 시작
 
 먼저 나는 [vscode.dev](vscode.dev)를 통해 개발하려고 사이트에 들어갔다.
