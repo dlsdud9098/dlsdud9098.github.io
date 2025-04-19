@@ -24,3 +24,15 @@
 .giscus-frame {
   border: none;
 }
+
+// applause-button
+
+applause-button {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+
+  .count-container {
+    color: inherit;
+  }
+}
