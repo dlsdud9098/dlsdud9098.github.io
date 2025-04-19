@@ -42,22 +42,5 @@
       }
     });
   </script>
-  
-<script type="module">
-    {% if site.mermaid %}
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    let config = {
-        startOnLoad: true,
-        fontFamily: "JetBrains Mono",
-        theme: "dark"
-    };
-    mermaid.initialize(config);
-    mermaid.run({ querySelector: ".language-mermaid" });
-    {% endif %}
-    document
-        .getElementById("_pushState")
-        .addEventListener("hy-push-state-load", function () {
-        {% if site.mermaid %} mermaid.run({ querySelector: ".language-mermaid" }); {% endif %}
-        });
 </script>
   
