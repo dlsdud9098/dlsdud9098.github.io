@@ -1,8 +1,3 @@
-{% if post.applause_button %}
-  {{ ' ' }}
-  <span class="clap-count" data-url="{{ post.url | absolute_url }}"></span>
-{% endif %}
-
 {% capture foobar %}
   {%- unless site.hydejack.hide_dates -%}
     {%- assign post_format = site.data.strings.date_formats.post | default:"%d %b %Y" -%}
