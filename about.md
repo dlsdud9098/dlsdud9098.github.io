@@ -610,7 +610,7 @@ redirect_from:
             <!-- Sidebar -->
             <aside class="sidebar">
                 <div class="profile-section">
-                    <div class="avatar"><img src="서인영 사진.jpg" alt="프로필 사진" onerror="this.onerror=null;this.src='https://placehold.co/296x296/EFEFEF/333333?text=Image+Not+Found';"/></div>
+                    <div class="avatar"><img src="/assets/img/blog/서인영 사진.jpg" alt="프로필 사진" onerror="this.onerror=null;this.src='https://placehold.co/296x296/EFEFEF/333333?text=Image+Not+Found';"/></div>
                     <div class="profile-info">
                         <h1 class="profile-name">서인영</h1>
                         <hr>
