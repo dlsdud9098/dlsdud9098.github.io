@@ -1,12 +1,11 @@
 ---
-layout: about  
-image: /assets/img/blog/hydejack-9.jpg  
+layout: about   
 hide_description: true  
 redirect_from:  
   - /resume/  
 ---
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -955,7 +954,7 @@ redirect_from:
                 </section>
                 
                 <!-- Cover Letter Section -->
-                <section class="content-section">
+                <!-- <section class="content-section">
                     <h2 class="card-title" style="font-size: 20px; margin-bottom: var(--space-4);">📝 자기소개서</h2>
                     <div class="cover-letter-card">                        
                         <h3>기술로 더 안전한 세상을 만드는 TISC의 비전에 동참하고 싶습니다.</h3>
@@ -982,7 +981,7 @@ redirect_from:
                         <p>장기적으로는 스마트시티 환경에서 수집된 시계열 데이터를 바탕으로 보행자의 동선과 행동을 예측하는 모델을 개발하여, 'MaRu' 솔루션이 단순한 사후 관제를 넘어 사고를 미연에 방지하는 '예측 AI 시스템'으로 발전하는 데 핵심적인 역할을 수행하고 싶습니다.</p>
                         <p>대표님의 메시지에서 "발전의 길은 절대 일직선이 아니다"라는 문구를 인상 깊게 보았습니다. 저 또한 수많은 기술적 난관과 실패를 성장의 발판으로 삼아왔습니다. TISC에서 끊임없이 도전하고 동료들과 함께 장애물을 극복하며, '3D 인지 기술을 통한 스마트 사회 구축'이라는 비전을 함께 실현해나가는 개발자가 되겠습니다.</p>
                     </div>
-                </section>
+                </section> -->
             </main>
         </div>
     </div>
